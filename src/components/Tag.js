@@ -1,10 +1,8 @@
-function Tag() {
+function Tag(props) {
   return (
-    <div>
-      <span>
-
-      </span>
-    </div>
+    <span className={"tag-name"}>
+      {props.name}
+    </span>
   )
 }
 
