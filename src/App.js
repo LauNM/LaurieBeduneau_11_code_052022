@@ -29,7 +29,7 @@ function App() {
 
 
   return (
-    <div className="App">
+    <div className={"App"}>
       <Routes>
         <Route path="" element={<Home data={items}/>}/>
         <Route path="/lodging" element={<Lodging/>}/>

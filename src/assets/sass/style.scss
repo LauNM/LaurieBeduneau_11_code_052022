@@ -1,0 +1,14 @@
+@import "variables";
+@import "tag";
+@import "thumb";
+:root {
+  font-family: 'Montserrat', sans-serif;
+}
+.App {
+  padding: 40px 100px;
+  @media screen and (max-width: 800px) {
+    padding: 20px;
+  }
+}
+
+
