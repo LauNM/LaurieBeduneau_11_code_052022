@@ -46,6 +46,35 @@ p {
           .thumb-wrapper .thumb .thumb-gradient .thumb-title {
             padding: 15px 20px; } }
 
+.dropdown-list {
+  width: calc((100% - 76px) /2); }
+  @media screen and (max-width: 800px) {
+    .dropdown-list {
+      width: 100%; } }
+
+.dropdown-text {
+  width: 100%; }
+
+.dropdown-header {
+  width: inherit;
+  display: inline-flex;
+  justify-content: space-between;
+  background: #FF6060;
+  color: #FFF;
+  padding: 13px 20px;
+  border-radius: 10px; }
+
+.dropdown-body {
+  padding: 30px 12px 27px 20px; }
+  .dropdown-body ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    .dropdown-body ul li {
+      font-size: 18px; }
+  .dropdown-body p {
+    font-size: 24px; }
+
 :root {
   font-family: 'Montserrat', sans-serif; }
 
