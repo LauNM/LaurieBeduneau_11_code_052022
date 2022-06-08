@@ -1,16 +1,17 @@
-.dropdown-list {
+.collapse.half {
   width: calc((100% - 76px) /2);
   @media screen and (max-width: 800px) {
     width: 100%;
   }
 }
 
-.dropdown-text {
+.collapse.full {
   width: 100%;
 }
 
-.dropdown-header {
-  width: inherit;
+.collapse-header {
+  box-sizing: border-box;
+  width: 100%;
   display: inline-flex;
   justify-content: space-between;
   background: $pink;
@@ -18,8 +19,12 @@
   padding: 13px 20px;
   border-radius: 10px;
 }
-.dropdown-body {
-  padding: 30px 12px 27px 20px;
+.collapse-body {
+  font-size: inherit;
+  margin-top: -20px;
+  padding: 50px 12px 27px 20px;
+  background-color: $grey-light;
+  color: $pink;
   ul {
     margin: 0;
     padding: 0;
@@ -31,4 +36,5 @@
   p{
     font-size: $size-5;
   }
+
 }
