@@ -1,7 +1,7 @@
 $pink: #FF6060;
 $white: #FFF;
 $black: #000000;
-$grey-light: #F6F6F6;
+$grey-light: #F7F7F7;
 $grey: #E3E3E3;
 $grey-dark: #C4C4C4;
 
@@ -16,6 +16,13 @@ $size-8: 13px;
 $size-9: 12px;
 $size-10: 10px;
 
+$sizeNames: $size-1, $size-2, $size-3, $size-4, $size-5, $size-6, $size-7, $size-8, $size-9, $size-10;
+
+@for $i from 1 through 10 {
+  .is-size-#{$i} {
+    font-size: nth($sizeNames, $i);
+  }
+}
 
 
 p {
