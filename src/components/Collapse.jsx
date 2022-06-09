@@ -1,11 +1,6 @@
 import {useState, useCallback} from "react";
 
-function Collapse({title, width, size, children}) {
-  Collapse.defaultProps = {
-    title: '',
-    width: 'full',
-    size: 'is-size-6'
-  }
+function Collapse({title = '', width = 'full', size = 'is-size-6', children}) {
   const [active, setActive] = useState(false);
   const handleClick = useCallback(() => setActive((prevState) => {
     return !prevState
