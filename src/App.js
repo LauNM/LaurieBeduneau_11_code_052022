@@ -5,6 +5,7 @@ import Lodging from "./pages/Lodging";
 import About from "./pages/About";
 import Error404 from "./pages/Error404";
 import React, {useState, useEffect, createContext} from "react";
+import Navbar from "./components/Navbar";
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
 
   return (
     <div className={"App"}>
+      <Navbar />
       <Routes>
         <Route path="" element={<Home data={items} />}/>
         <Route path="/lodging" element={<Lodging/>}/>

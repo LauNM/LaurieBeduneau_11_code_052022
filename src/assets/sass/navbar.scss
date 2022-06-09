@@ -1,0 +1,17 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  .navbar-items {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    li {
+      padding-left :57px;
+      a{
+        color: $pink;
+        text-decoration: none;
+      }
+    }
+  }
+}

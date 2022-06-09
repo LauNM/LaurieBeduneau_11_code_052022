@@ -1,11 +1,17 @@
-function Thumb({title, image}) {
-  return (
-    <div className={"thumb"}>
-      <div className={"thumb-gradient"} />
-      <img className={"thumb-cover"} src={image} alt={'cover'}/>
-      <p className={"thumb-title"}>{title}</p>
+import {NavLink} from "react-router-dom";
 
-    </div>
+function Thumb({ key, title, image }) {
+  return (
+
+      <div className={"thumb"}>
+      {/*  <NavLink
+          to={`lodging/${key}`}
+        >*/}
+        <div className={"thumb-gradient"}/>
+        <img className={"thumb-cover"} src={image} alt={'cover'}/>
+        <p className={"thumb-title"}>{title}</p>
+        {/*</NavLink>*/}
+      </div>
   )
 }
 
