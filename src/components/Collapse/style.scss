@@ -1,0 +1,51 @@
+@import "../../assets/sass/variables";
+
+.collapse {
+    &.half {
+      width: calc((100% - 76px) /2);
+  
+      @media screen and (max-width: 800px) {
+        width: 100%;
+      }
+    }
+  
+    &.full {
+      width: 100%;
+    }
+  }
+  
+  
+  
+  .collapse-header {
+    box-sizing: border-box;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    background: $pink;
+    color: $white;
+    padding: 13px 20px;
+    border-radius: 10px;
+  }
+  
+  .collapse-body {
+    font-size: inherit;
+    margin-top: -20px;
+    padding: 50px 12px 27px 20px;
+    background-color: $grey-light;
+    color: $pink;
+  
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+  
+      li {
+        font-size: $size-6;
+      }
+    }
+  
+    p {
+      font-size: $size-5;
+    }
+  
+  }

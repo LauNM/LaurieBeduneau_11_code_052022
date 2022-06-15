@@ -1,4 +1,4 @@
-import './assets/css/style.css';
+import "./assets/sass/style.scss"
 import {Routes, Route} from "react-router-dom";
 import Home from "./pages/Home";
 import Lodging from "./pages/Lodging";
