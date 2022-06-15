@@ -1,1 +1,29 @@
 @import "../../assets/sass/variables";
+
+.location-wrapper {
+  header {
+    display: flex;
+    justify-content: space-between;
+    color: $pink;
+    .location {
+
+    }
+    .host {
+      div {
+        display: flex;
+        align-items: center;
+        .host-avatar {
+          height: 64px;
+          width: 64px;
+          margin-left: 10px;
+          border-radius: 50%;
+          @media screen and (max-width: 800px) {
+            height: 32px;
+            width: 32px;
+          }
+        }
+      }
+
+    }
+  }
+}
