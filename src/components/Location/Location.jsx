@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import "./style.scss";
 import Tag from "../Tag/Tag";
 import Rating from "../Rating/Rating";
+import Collapse from "../Collapse/Collapse";
 
 function Location( {data} ) {
   let params = useParams();
@@ -39,6 +40,14 @@ function Location( {data} ) {
           </div>
         </div>
       </header>
+      <main>
+        <Collapse title={"Description"} width={"half"} children={location.description} />
+        <Collapse title={"Equipements"} width={"half"} >
+          <ul>
+            {location.equipments.map((equipment, i) => <li key={i}>{equipment}</li>) }
+          </ul>
+        </Collapse>
+      </main>
     </div>
   )
 }

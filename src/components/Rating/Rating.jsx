@@ -7,7 +7,7 @@ function Rating({number}) {
   return (
     <div>
       {starArray.map((i) => (
-        <Star fill={number >= i ? '#FF6060' : '#E3E3E3'} />
+        <Star className={"star"} fill={number >= i ? '#FF6060' : '#E3E3E3'} />
       ))}
     </div>
   )
