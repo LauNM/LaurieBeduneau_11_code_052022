@@ -1,11 +1,11 @@
 import "./assets/sass/style.scss"
 import {Routes, Route} from "react-router-dom";
 import Home from "./pages/Home";
-import Lodging from "./pages/Lodging";
 import About from "./pages/About";
 import Error404 from "./pages/Error404";
 import React, {useState, useEffect, createContext} from "react";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar/Navbar";
+import Location from "./components/Location/Location";
 
 function App() {
 
@@ -27,8 +27,8 @@ function App() {
     <div className={"App"}>
       <Navbar />
       <Routes>
-        <Route path="" element={<Home data={items} />}/>
-        <Route path="/lodging" element={<Lodging/>}/>
+        <Route path="" element={<Home data={items} />} />
+        <Route path="location/:id" element={<Location data={items}/>} />
         <Route path="/about" element={<About/>}/>
         <Route element={<Error404/>}/>
       </Routes>

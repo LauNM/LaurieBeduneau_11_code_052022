@@ -1,17 +1,13 @@
-import Thumb from "../components/Thumb";
-import Collapse from "../components/Collapse";
-import Carrousel from "../components/Carrousel";
-
+import Thumb from "../components/Thumb/Thumb";
 
 function Home({data}) {
   return (
-    <div>
+    <div className={"main"}>
        <div className={"thumb-wrapper"}>
-       {data.map((item) =>
+       {data.map((item, i) =>
           <Thumb
-            key={item.id}
-            title={item.title}
-            image={item.cover}
+            key={i}
+            item={item}
           /> )}
       </div>
     </div>

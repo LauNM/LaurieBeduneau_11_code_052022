@@ -1,25 +1,15 @@
 import { useParams } from "react-router-dom";
 import "./style.scss";
-import star from "../../assets/images/star.svg";
 import Tag from "../Tag/Tag";
+import Rating from "../Rating/Rating";
 
 function Location( {data} ) {
   let params = useParams();
   let location = data.find((element) => element.id === params.id)
-  const rating = location.rating;
-  const greyStar = 5 - rating;
-  let tab = [];
-  const ratingStar = () => {
-    for (let i = 0; i < rating; i++) {
-      tab.push('star')
-    }
-    return tab;
-  }
-  ratingStar();
-    console.log(location)
+  console.log(location)
   return (
     <div className={"location-wrapper"}>
-      <img src={location.cover} height={"415px"}/>
+      <img src={location.cover} alt={'cover'} height={"415px"}/>
       {/*<Carrousel />*/}
       <header>
         <div className={"location"}>
@@ -36,16 +26,10 @@ function Location( {data} ) {
         <div className={"host"}>
           <div>
             <p className={"is-size-6"}>{location.host.name}</p>
-            <img src={location.host.picture} className={"host-avatar"}/>
+            <img src={location.host.picture} alt={'host picture'} className={"host-avatar"}/>
           </div>
           <div className={"rating"}>
-
-            { tab.map((e, i) => <img src={star} key={i}/>)}
-            {/*{ for (let  i=0; i < {location.rating}; i++) {
-             <img src={"./assets.images.star"} />
-              } }*/}
-            {/*{location.rating}*/}
-            {/*{ [...Array(n)].map((e, i) =>  <img src={star} key={i}/>) }*/}
+            <Rating number={location.rating} />
           </div>
         </div>
       </header>
