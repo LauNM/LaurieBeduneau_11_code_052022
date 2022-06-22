@@ -9,7 +9,7 @@ function Navbar() {
 
   return (
     <div className={'navbar'}>
-      <img src={Logo} alt={"logo"}/>
+      <img src={Logo} alt={"logo"} className={"logo"}/>
       <nav>
         <ul className={'navbar-items'}>
           <li>

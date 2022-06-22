@@ -3,13 +3,24 @@
 .navbar {
   display: flex;
   justify-content: space-between;
+  .logo {
+    @media screen and (max-width: 800px) {
+      height: 47px;
+      width: 145px;
+    }
+  }
   .navbar-items {
     padding: 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     list-style: none;
     li {
       padding-left :57px;
+      @media screen and (max-width: 800px) {
+       font-size: $size-9;
+        padding-left :10px;
+      }
       a{
         color: $pink;
         text-decoration: none;
