@@ -1,8 +1,9 @@
-import { useParams } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import "./style.scss";
 import Tag from "../Tag/Tag";
 import Rating from "../Rating/Rating";
 import Collapse from "../Collapse/Collapse";
+import Carrousel from "../Carrousel/Carrousel";
 
 function Location( {data} ) {
   let params = useParams();
@@ -15,11 +16,13 @@ function Location( {data} ) {
   const hostName = location.host.name.split(' ');
   const firstName = hostName[0];
   const lastName = hostName[1];
-  console.log(data)
+
+  // const {location,firstName,lastName} = useLocation({data});
+
   return (
     <div className={"location-wrapper"}>
-      <img src={location.cover} alt={'cover'} height={"415px"}/>
-      {/*<Carrousel />*/}
+      {/*<img src={location.cover} alt={'cover'} height={"415px"}/>*/}
+      <Carrousel pictures={location.pictures}/>
       <header>
         <div className={"location"}>
           <h1 className={"location-name is-size-4"}>{location.title}</h1>
