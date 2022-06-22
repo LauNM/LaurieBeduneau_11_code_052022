@@ -1,4 +1,5 @@
 import {NavLink} from "react-router-dom";
+import Logo from "./LOGO.svg";
 import "./style.scss";
 
 function Navbar() {
@@ -8,7 +9,7 @@ function Navbar() {
 
   return (
     <div className={'navbar'}>
-      <img src={"./images/LOGO.svg"} alt={"logo"}/>
+      <img src={Logo} alt={"logo"}/>
       <nav>
         <ul className={'navbar-items'}>
           <li>
