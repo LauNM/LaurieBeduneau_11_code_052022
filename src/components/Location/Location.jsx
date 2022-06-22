@@ -7,6 +7,11 @@ import Collapse from "../Collapse/Collapse";
 function Location( {data} ) {
   let params = useParams();
   let location = data.find((element) => element.id === params.id)
+
+  if (location === undefined) {
+    return <Navigate to="/404"/>
+  }
+
   const hostName = location.host.name.split(' ');
   const firstName = hostName[0];
   const lastName = hostName[1];
