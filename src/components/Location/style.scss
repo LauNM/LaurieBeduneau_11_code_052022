@@ -10,16 +10,19 @@
       margin-top: 15px;
       flex-direction: column;
     }
+
     .location {
       .location-name {
         margin: 0;
         font-size: $size-4;
       }
+
       .location-city {
         margin-top: 10px;
         margin-bottom: 28px;
         font-size: $size-6;
       }
+
       @media screen and (max-width: 800px) {
         .location-name {
           font-size: $size-6;
@@ -30,12 +33,14 @@
           margin-bottom: 10px;
         }
       }
+
       .tags {
         display: inline-flex;
         flex-wrap: wrap;
         gap: 10px;
       }
     }
+
     .host-infos {
       display: flex;
       flex-direction: column;
@@ -46,23 +51,26 @@
         align-items: center;
         flex-direction: row-reverse;
       }
-     .host {
-       display: flex;
-       justify-content: flex-end;
-       align-items: center;
-       margin-bottom: 24px;
-       @media screen and (max-width: 800px) {
-        margin-bottom: 0;
-       }
-       .host-name {
-         display: flex;
-         flex-direction: column;
-         align-items: flex-end;
-         font-size: $size-6;
-         @media screen and (max-width: 800px) {
-           font-size: $size-9;
-         }
-       }
+
+      .host {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-bottom: 24px;
+        @media screen and (max-width: 800px) {
+          margin-bottom: 0;
+        }
+
+        .host-name {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          font-size: $size-6;
+          @media screen and (max-width: 800px) {
+            font-size: $size-9;
+          }
+        }
+
         .host-avatar {
           height: 64px;
           width: 64px;
@@ -76,12 +84,13 @@
       }
     }
   }
+
   main {
     margin-top: 24px;
     display: flex;
     justify-content: space-between;
     @media screen and (max-width: 800px) {
-     flex-direction: column;
+      flex-direction: column;
       gap: 20px;
     }
   }

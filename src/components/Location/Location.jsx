@@ -1,11 +1,11 @@
-import { useParams, Navigate } from "react-router-dom";
+import {useParams, Navigate} from "react-router-dom";
 import "./style.scss";
 import Tag from "../Tag/Tag";
 import Rating from "../Rating/Rating";
 import Collapse from "../Collapse/Collapse";
 import Carrousel from "../Carrousel/Carrousel";
 
-function Location( {data} ) {
+function Location({ data }) {
   let params = useParams();
   let location = data.find((element) => element.id === params.id)
 
@@ -31,7 +31,7 @@ function Location( {data} ) {
               <Tag
                 key={i}
                 name={tag}
-              /> )}
+              />)}
           </div>
         </div>
         <div className={"host-infos"}>
@@ -43,15 +43,15 @@ function Location( {data} ) {
             <img src={location.host.picture} alt={'host picture'} className={"host-avatar"}/>
           </div>
           <div className={"rating"}>
-            <Rating number={location.rating} />
+            <Rating number={location.rating}/>
           </div>
         </div>
       </header>
       <main>
-        <Collapse title={"Description"} width={"half"} children={location.description} />
-        <Collapse title={"Equipements"} width={"half"} >
+        <Collapse title={"Description"} width={"half"} children={location.description}/>
+        <Collapse title={"Equipements"} width={"half"}>
           <ul>
-            {location.equipments.map((equipment, i) => <li key={i}>{equipment}</li>) }
+            {location.equipments.map((equipment, i) => <li key={i}>{equipment}</li>)}
           </ul>
         </Collapse>
       </main>

@@ -21,6 +21,7 @@
       transition-duration: 0.5s;
       height: inherit;
     }
+
     .image {
       object-fit: cover;
       width: inherit;
@@ -32,21 +33,24 @@
   .arrow-left, .arrow-right {
     fill: $white;
     position: absolute;
-    top: calc(50% - 80px/2);
+    top: calc(50% - 80px / 2);
     cursor: pointer;
     user-select: none;
     z-index: 20;
     @media screen and (max-width: 800px) {
       height: 19.8px;
-      top: calc(50% - 19.8px/2);
+      top: calc(50% - 19.8px / 2);
     }
   }
+
   .arrow-left {
     left: 25px;
   }
+
   .arrow-right {
     right: 25px;
   }
+
   .counter {
     color: $white;
     position: absolute;
@@ -55,7 +59,7 @@
     font-size: $size-6;
     font-weight: 500;
     @media screen and (max-width: 800px) {
-     display: none;
+      display: none;
     }
   }
 }

@@ -21,7 +21,7 @@ function Navbar() {
             >
               Accueil
             </NavLink>
-            </li>
+          </li>
           <li>
             <NavLink
               to="about"

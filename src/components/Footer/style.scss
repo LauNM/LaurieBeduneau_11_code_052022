@@ -1,0 +1,26 @@
+@import "../../assets/sass/variables";
+
+.footer {
+  min-height: 209px;
+  background-color: $black;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  align-items: center;
+  justify-content: center;
+
+  .logo {
+    fill: $white;
+    width: 122px;
+    height: 40px;
+  }
+
+  p {
+    font-size: $size-5;
+    font-weight: 500;
+    @media screen and (max-width: 800px) {
+      font-size: $size-9;
+    }
+  }
+}

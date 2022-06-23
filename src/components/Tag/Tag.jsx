@@ -1,6 +1,6 @@
 import "./style.scss";
 
-function Tag({name}) {
+function Tag({ name }) {
   return (
     <span className={"tag-name"}>
       {name}
