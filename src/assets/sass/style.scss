@@ -9,19 +9,20 @@
   @media screen and (max-width: 800px) {
     padding: 20px;
   }
-  .home-header {
+  .home-header, .about-header {
     position: relative;
     margin-top: 68px;
-    height: 223px;
     margin-bottom: 43px;
+    height: 223px;
     display: flex;
     align-items: center;
     justify-content: center;
     @media screen and (max-width: 800px) {
       height: 111px;
+      margin-top: 20px;
+      margin-bottom: 20px;
     }
-
-    .cover-darken, .cover-home-page {
+    .cover-darken, .cover-page {
       position: absolute;
       height: inherit;
       width: 100%;
@@ -33,7 +34,7 @@
       mix-blend-mode: darken;
       z-index: 2;
     }
-    .cover-home-page {
+    .cover-page {
       object-fit: cover;
       z-index: 1;
     }
@@ -62,6 +63,13 @@
     .link {
       color: $pink;
     }
+  }
+  .about-collapses {
+    max-width: 1023px;
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+    margin: auto;
   }
 }
 

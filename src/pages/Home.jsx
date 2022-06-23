@@ -6,7 +6,7 @@ function Home({data}) {
     <div className={"main"}>
       <div className={"home-header"}>
         <div className={"cover-darken"}/>
-        <img src={coverImage} alt={'cover-image'} className={'cover-home-page'}/>
+        <img src={coverImage} alt={'cover-image'} className={'cover-page'}/>
         <h1 className={"home-title"}>Chez vous, partout et ailleurs</h1>
       </div>
        <div className={"thumb-wrapper"}>

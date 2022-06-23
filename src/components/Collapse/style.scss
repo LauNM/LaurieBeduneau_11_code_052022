@@ -6,13 +6,36 @@
     @media screen and (max-width: 800px) {
       width: 100%;
     }
+    .collapse-header, .collapse-body {
+      font-size: $size-6;
+    }
+    @media screen and (max-width: 800px) {
+      .collapse-header {
+        font-size: $size-8;
+      }
+      .collapse-body {
+        font-size: $size-9;
+      }
+    }
   }
   &.full {
     width: 100%;
+    .collapse-header, .collapse-body {
+      font-size: $size-5;
+    }
+    @media screen and (max-width: 800px) {
+      .collapse-header {
+        font-size: $size-8;
+      }
+      .collapse-body {
+        font-size: $size-9;
+      }
+    }
   }
 
   .collapse-header {
     box-sizing: border-box;
+    font-weight: 500;
     width: 100%;
     display: inline-flex;
     justify-content: space-between;
@@ -20,9 +43,7 @@
     color: $white;
     padding: 13px 20px;
     border-radius: var(--border-radius-1);
-    font-size: $size-6;
     @media screen and (max-width: 800px) {
-      font-size: $size-8;
       padding: 5px 11px;
       .arrows svg {
         width: 15.2px;
@@ -32,14 +53,10 @@
   }
   
   .collapse-body {
-    font-size: $size-6;
     margin-top: -20px;
     padding: 50px 12px 27px 20px;
     background-color: $grey-light;
     color: $pink;
-    @media screen and (max-width: 800px) {
-      font-size: $size-9;
-    }
     ul {
       margin: 0;
       padding: 0;
