@@ -18,7 +18,7 @@
   width: calc((100% - 120px) /3);
   height: 340px;
   margin-bottom: 50px;
-  border-radius: 10px;
+  border-radius: $border-radius-fixed-10;
   overflow: hidden;
   display: flex;
   flex-direction: column;

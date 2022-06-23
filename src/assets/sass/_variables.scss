@@ -5,6 +5,8 @@ $grey-light: #F7F7F7;
 $grey: #E3E3E3;
 $grey-dark: #C4C4C4;
 
+
+
 $size-1: 288px;
 $size-2: 96px;
 $size-3: 48px;
@@ -16,15 +18,17 @@ $size-8: 13px;
 $size-9: 12px;
 $size-10: 10px;
 
-$sizeNames: $size-1, $size-2, $size-3, $size-4, $size-5, $size-6, $size-7, $size-8, $size-9, $size-10;
+$border-radius-fixed-10: 10px;
+$border-radius-fixed-25: 25px;
+:root {
+    --border-radius-1: 10px;
+    --border-radius-2: 25px;
 
-@for $i from 1 through 10 {
-  .is-size-#{$i} {
-    font-size: nth($sizeNames, $i);
+  @media screen and (max-width: 800px) {
+    --border-radius-1: 5px;
+    --border-radius-2: 10px;
   }
 }
-
-
 p {
   margin: 0;
 }

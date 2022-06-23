@@ -2,8 +2,10 @@
 
 .tag-name {
   background: $pink;
-  border-radius: 10px;
+  border-radius: var(--border-radius-1);
   color: $white;
   padding: 3px 22px;
-  margin-right: 10px;
+  @media screen and (max-width: 800px) {
+    font-size: $size-10;
+  }
 }

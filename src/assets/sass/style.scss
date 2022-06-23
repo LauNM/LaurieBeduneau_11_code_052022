@@ -21,15 +21,16 @@
       height: 111px;
     }
 
-    .cover-gradient, .cover-home-page {
+    .cover-darken, .cover-home-page {
       position: absolute;
       height: inherit;
       width: 100%;
-      border-radius: 25px;
+      border-radius: var(--border-radius-2);
     }
-    .cover-gradient {
+    .cover-darken {
       opacity: 30%;
-      background: linear-gradient(to bottom, rgba(#000000, 0), rgba(#000000, 0.5));
+      background: $black;
+      mix-blend-mode: darken;
       z-index: 2;
     }
     .cover-home-page {

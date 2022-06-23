@@ -1,7 +1,7 @@
 import "./style.scss";
 import {useState} from "react";
 import { ReactComponent as ArrowLeft } from "../../assets/images/arrow-left.svg"
-import {  ReactComponent as ArrowRight } from "../../assets/images/arrow-right.svg";
+import { ReactComponent as ArrowRight } from "../../assets/images/arrow-right.svg";
 
 function Carrousel({pictures}) {
 const numberOfPictures = pictures.length;
@@ -26,7 +26,6 @@ const nextSlide = () => {
       { pictures.map((picture, key) =>{
         return (
           <div className={key === current ? 'slide active' : 'slide'} key={key}>
-            <div className={"image-gradient"}/>
             {key === current && (<img
               src={picture}
               key={key}
