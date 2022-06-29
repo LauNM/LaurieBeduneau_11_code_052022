@@ -12,16 +12,16 @@ function Carrousel({ pictures }) {
   }
 
   const prevSlide = () => {
-    setCurrent(current === 0 ? numberOfPictures - 1 : current - 1)
+    setCurrent((prevCurrent) => prevCurrent === 0 ? numberOfPictures - 1 : prevCurrent - 1)
   };
   const nextSlide = () => {
-    setCurrent(current === numberOfPictures - 1 ? 0 : current + 1)
+    setCurrent((prevCurrent) => prevCurrent === numberOfPictures - 1 ? 0 : prevCurrent + 1)
   };
 
   return (
     <div className={"carrousel-wrapper"}>
-      <ArrowLeft alt={'previous'} className={'arrow-left'} onClick={prevSlide}/>
-      <ArrowRight alt={'next'} className={'arrow-right'} onClick={nextSlide}/>
+      {pictures.length === 1 ? '' : <ArrowLeft alt={'previous'} className={'arrow-left'} onClick={prevSlide}/> }
+      {pictures.length === 1 ? '' : <ArrowRight alt={'next'} className={'arrow-right'} onClick={nextSlide}/> }
       <span className={'counter'}>{current + 1}/{numberOfPictures}</span>
       {pictures.map((picture, key) => {
           return (
