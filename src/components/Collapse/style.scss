@@ -1,9 +1,6 @@
 @import "../../assets/sass/variables";
 
 .collapse {
-  @media screen and (min-width: 801px) {
-    min-height: 300px;
-  }
 
   &.half {
     width: calc((100% - 76px) / 2);
