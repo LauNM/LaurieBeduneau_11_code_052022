@@ -7,6 +7,7 @@ import React, {useState, useEffect} from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Location from "./components/Location/Location";
 import Footer from "./components/Footer/Footer";
+import Loading from "./components/Loading/Loading";
 
 function App() {
 
@@ -32,7 +33,7 @@ function App() {
     <div className={'App'}>
       <div className={'app-content'}>
         <Navbar/>
-        {isLoading ? <div>Loading....</div> : <Routes>
+        {isLoading ? <Loading /> : <Routes>
           <Route path="" element={<Home data={items}/>}/>
           <Route path="location/:id" element={<Location data={items}/>}/>
           <Route path="/about" element={<About/>}/>
