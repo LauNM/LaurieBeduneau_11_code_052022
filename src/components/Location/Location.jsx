@@ -13,11 +13,7 @@ function Location({ data }) {
     return <Navigate to="/404"/>
   }
 
-  const hostName = location.host.name.split(' ');
-  const firstName = hostName[0];
-  const lastName = hostName[1];
-
-  // const {location,firstName,lastName} = useLocation({data});
+  const [firstName, lastName] = location.host.name.split(' ');
 
   return (
     <div className={"location-wrapper"}>
