@@ -30,11 +30,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    @media screen and (max-width: 800px) {
-      height: 111px;
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
 
     .cover-darken, .cover-page {
       position: absolute;
@@ -63,6 +58,15 @@ body {
       @media screen and (max-width: 800px) {
         font-size: $size-5;
       }
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .home-header {
+      height: 111px;
+    }
+    .home-header, .about-header {
+      margin-top: 20px;
+      margin-bottom: 20px;
     }
   }
 

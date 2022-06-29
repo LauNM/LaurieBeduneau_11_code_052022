@@ -22,7 +22,8 @@
       padding-left: 57px;
       @media screen and (max-width: 800px) {
         font-size: $size-9;
-        padding-left: 10px;
+        padding-left: 15px;
+        text-transform: uppercase;
       }
 
       a {
