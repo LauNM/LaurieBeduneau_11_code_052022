@@ -8,7 +8,6 @@ function Collapse({ title = '', width = 'full', children }) {
   const handleClick = useCallback(() => setActive((prevState) => {
     return !prevState
   }), []);
-  // const memoClick = useCallback(() => setActive(!active), [active]);
 
   return (
     <div className={`collapse ${width}`}>

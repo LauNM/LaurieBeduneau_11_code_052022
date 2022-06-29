@@ -16,16 +16,21 @@ function App() {
 
   useEffect(() => {
     (async () => {
-      //try catch gestion d'erreur à tous les palliers
-      const response = await fetch('/logements.json');
+      try {
+        const response = await fetch('/logements.json');
 
-      if (response.ok) {
-        const responseData = await response.json();
-        setItems(responseData)
-      } else {
-        alert('nop')
+        if (response.ok) {
+          const responseData = await response.json();
+          setItems(responseData)
+        } else {
+          alert('something went wrong')
+        }
+        setIsLoading(false);
       }
-      setIsLoading(false);
+      catch(error) {
+        console.log(error)
+      }
+
     })()
   }, [])
 
